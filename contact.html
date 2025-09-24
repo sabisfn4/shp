@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせ | 株式会社SABIS</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #f8f8f8;
+      color: black;
+    }
+
+    header {
+      text-align: center;
+      padding: 10px 20px 0px;
+      background: linear-gradient(to bottom, #2eb2ff 0%, #aee5ff 100%);
+      color: white;
+    }
+
+    .gradient-bar {
+      height: 100px;
+      background: linear-gradient(270deg, purple, blue, orange, green, red, pink);
+      background-size: 1200% 1200%;
+      animation: gradientAnimation 15s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* ▼ 幅制限を外してフォームを広く使う */
+    .content {
+      flex: 1;
+      padding: 40px 20px;
+      background: #FAFAFA;
+      color: #222222;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 1119px;
+      border: none;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .back-to-top {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .back-to-top a {
+      color: #00bfff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .back-to-top a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      max-width: 40%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="reveal-layer"></div>
+    <img src="お問い合わせ2.png" alt="お問い合わせ" class="logo-img">
+  </header>
+
+  <div class="gradient-bar"></div>
+
+  <div class="content">
+    <p>ご質問やご相談など、お気軽にお問い合わせください。<br>担当者より折り返しご連絡させていただきます。</p>
+
+    <!-- Googleフォーム埋め込み -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScHVDw69-GiIopL703fVhwfsgWNbCMRoLJWWAERHcQqkxkKtQ/viewform?embedded=true">
+      読み込んでいます…
+    </iframe>
+
+    <div class="back-to-top">
+      <a href="index.html">トップページへ戻る</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 株式会社SABIS　　　　 
+       <a href="privacy.html" target="_blank" style="color:white;">プライバシーポリシー</a></p>
+  </footer>
+</body>
+</html>

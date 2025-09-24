@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>採用情報 | 株式会社SABIS</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #f8f8f8;
+      color: black;
+    }
+
+    /* ▼ ヘッダーを会社概要ページと同一に */
+    header {
+      text-align: center;
+      padding: 10px 20px 0px;
+      background: linear-gradient(to bottom, #2eb2ff 0%, #aee5ff 100%);
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    p.subtitle {
+      margin: 10px 0 40px;
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    .gradient-bar {
+      height: 100px;
+      background: linear-gradient(270deg, purple, blue, orange, green, red, pink);
+      background-size: 1200% 1200%;
+      animation: gradientAnimation 15s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px 20px;
+      /* ここは要望外のため既存のまま */
+      padding-left: 45em;
+    }
+
+    .back-to-top {
+      text-align: left;
+      padding-left: 50em;
+      margin: 40px 0 20px;
+    }
+
+    .back-to-top a {
+      color: #00bfff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .back-to-top a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+
+    footer a { color: white; }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    /* ▼ 題目画像（サイズ）を会社概要ページと同一に */
+    .logo-img {
+      max-width: 30%;
+      height: 60%;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="reveal-layer"></div>
+    <img src="採用情報2.png" alt="採用情報" class="logo-img">
+  </header>
+
+  <div class="gradient-bar"></div>
+
+  <div class="content">
+    <p>株式会社SABISでは、新しい仲間を募集しています。<br>年齢・経験を問わず、やる気のある方を歓迎します。</p>
+    <p><strong>募集職種：</strong> 販売スタッフ、店舗マネージャー、事務スタッフ</p>
+    <p><strong>勤 務 地：</strong> 千葉県市川市・浦安市・船橋市・習志野市</p>
+    <p><strong>勤務時間：</strong> シフト制（例：9:00～18:00）</p>
+    <p><strong> 休　日 ：</strong> 週休2日制</p>
+    <p><strong> 給　与 ：</strong> 23万円～30万円（経験・能力により応相談）</p>
+    <p><strong>応募方法：</strong> <a href="contact.html">お問い合わせページ</a> よりご連絡ください。</p>
+  </div>
+
+  <div class="back-to-top">
+    <a href="index.html">トップページへ戻る</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 株式会社SABIS　　　　 <a href="privacy.html" target="_blank">プライバシーポリシー</a></p>
+  </footer>
+</body>
+</html>
